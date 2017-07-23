@@ -204,6 +204,20 @@ describe('inline-css', function() {
         compare(path.join('test', 'fixtures', 'width-attr.html'), path.join('test', 'expected', 'width-attr.html'), options, done);
     });
 
+    it('Should inline css and create width/height attributes on images', function(done) {
+        var options = {
+            url: './',
+            removeStyleTags: true,
+						applyAttributesTo: {
+              'img': [
+                'width',
+                'height',
+              ]
+            }
+        };
+        compare(path.join('test', 'fixtures', 'image.html'), path.join('test', 'expected', 'image.html'), options, done);
+    });
+
     it('Should inline css and create table attributes on table elements', function(done) {
         var options = {
             url: './',
