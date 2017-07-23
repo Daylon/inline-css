@@ -9,7 +9,7 @@
   "dependencies": {
     "bluebird": "^2.9.25",
     "cheerio": "^0.19.0",
-    "css-rules": "^1.0.0",
+    "css-rules": "Daylon/css-rules",
     "extend": "^3.0.0",
     "extract-css": "Daylon/extract-css",
     "flatten": "0.0.1",
